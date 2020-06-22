@@ -10,10 +10,11 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_putchar(char c);
-void ft_print_var(char a,char b,char c);
+int	ft_putchar(char c);
+void	ft_print_var(char a,char b,char c);
+void	ft_print_comb(void);
 
-void ft_print_var(char a,char b,char c){
+void	ft_print_var(char a,char b,char c){
 	ft_putchar(a);
 	ft_putchar(b);
 	ft_putchar(c);
@@ -23,7 +24,7 @@ void ft_print_var(char a,char b,char c){
 	}
 }
 
-void ft_print_comb(void){
+void	ft_print_comb(void){
 	char a;
 	char b;
 	char c;
