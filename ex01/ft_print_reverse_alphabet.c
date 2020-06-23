@@ -13,16 +13,13 @@
 int	ft_putchar(char c);
 void	ft_print_reverse_alphabet(void);
 
-int	ft_putchar(char c){
-	write(1, &c, 1);
-	return(0);
-}
-
-void	ft_print_reverse_alphabet(void){
+void	ft_print_reverse_alphabet(void)
+{
 	int rev_a;
 
 	rev_a = 'z';
-	while(rev_a >= 'a'){
+	while(rev_a >= 'a')
+	{
 		ft_putchar(rev_a);
 		rev_a = rev_a - 1;
 	}
