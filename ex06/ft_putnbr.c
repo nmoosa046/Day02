@@ -6,13 +6,16 @@
 /*   By: nmoosa <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/23 13:29:21 by nmoosa            #+#    #+#             */
-/*   Updated: 2020/06/23 13:56:32 by nmoosa           ###   ########.fr       */
+/*   Updated: 2020/06/23 14:59:38 by nmoosa           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+#include<unistd.h>
 
-int		ft_putchar(char c);
-void	ft_putnbr(int nb);
-
+int		ft_putchar(char c)
+{
+	write(1, &c, 1);
+	return 0;
+}
 void	ft_putnbr(int nb)
 {
 	char c;
@@ -30,4 +33,9 @@ void	ft_putnbr(int nb)
 	}
 	
 }
-
+int main()
+{
+	ft_putnbr(42);
+	ft_putchar('\n');
+	return 0;
+}

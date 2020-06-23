@@ -6,13 +6,9 @@
 /*   By: nmoosa <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/21 10:29:32 by nmoosa            #+#    #+#             */
-/*   Updated: 2020/06/21 10:37:24 by nmoosa           ###   ########.fr       */
+/*   Updated: 2020/06/23 16:09:12 by nmoosa           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-int	ft_putchar(char c);
-void	ft_print_comb(void);
-
 void	ft_print_comb(void)
 {
 	char a;
