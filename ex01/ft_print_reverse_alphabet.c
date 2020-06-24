@@ -6,12 +6,11 @@
 /*   By: nmoosa <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/21 10:10:21 by nmoosa            #+#    #+#             */
-/*   Updated: 2020/06/21 10:13:23 by nmoosa           ###   ########.fr       */
+/*   Updated: 2020/06/24 10:10:08 by nmoosa           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_putchar(char c);
-void	ft_print_reverse_alphabet(void);
 
 void	ft_print_reverse_alphabet(void)
 {
