@@ -6,41 +6,36 @@
 /*   By: nmoosa <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/23 13:13:42 by nmoosa            #+#    #+#             */
-/*   Updated: 2020/06/23 13:13:50 by nmoosa           ###   ########.fr       */
+/*   Updated: 2020/06/24 10:30:57 by nmoosa           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 
 int	ft_putchar(char c);
-void	ft_print_comb2(void);
 
-void	ft_print_comb2(void){
-	char	table[4] = {0, 0, 0, 1};
+void	ft_print_comb2(void)
+{
+	int	a;
+	int	b;
 
-	while (!((table[0] == 9) && (table[1] == 9))){
-		ft_putchar(table[0] + 48);
-		ft_putchar(table[1] + 48);
-		ft_putchar(' ');
-		ft_putchar(table[2] + 48);
-		ft_putchar(table[3] + 48);
-		if (!((table[0] == 9) && (table[1] == 8))){
-			ft_putchar(',');
-		}
-		if (!((table[0] == 9) && (table[1] == 8))){
+    a = -1;
+	while(++a <=98)
+	{
+		b = a;
+		while(++b <= 99)
+		{
+			ft_putchar((char)(a/10)+'0');
+			ft_putchar((char)(a%10)+'0');
 			ft_putchar(' ');
-			table[3]++;
+			ft_putchar((char)(b/10)+'0');
+			ft_putchar((char)(b%10)+'0');
+
+			if((a!=98))
+			{
+			ft_putchar(',');
+			ft_putchar(' ');
+			}
 		}
-		if ((table[3] = table[3] % 10) == 0){
-			table[2] = (table[2] + 1);
-		}
-		if (table[2] == 10){
-			table[2] = table[0];
-			table[1]++;
-		}
-		if ((table[1] = table[1] % 10) == 0){
-			table[0]++;
-			table[3] = table[1] + 1;
-		}
-	}
-					
+	}	
+}
 
