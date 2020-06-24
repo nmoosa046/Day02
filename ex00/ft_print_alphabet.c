@@ -6,17 +6,18 @@
 /*   By: nmoosa <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/21 10:05:41 by nmoosa            #+#    #+#             */
-/*   Updated: 2020/06/21 10:07:44 by nmoosa           ###   ########.fr       */
+/*   Updated: 2020/06/24 10:07:33 by nmoosa           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 int	ft_putchar(char c);
-void	ft_print_alphabet(void);
 
-void	ft_print_alphabet(void){
+void	ft_print_alphabet(void)
+{
 	int a;
 
 	a = 'a';
-	while (a <= 'z'){
+	while (a <= 'z')
+	{
 		ft_putchar(a);
 		a = a + 1;
 	}
